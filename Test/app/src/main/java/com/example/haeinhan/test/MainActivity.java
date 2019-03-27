@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements ManifestFetcher.M
         txt_playState = (TextView)findViewById(R.id.textView);
         player = ExoPlayer.Factory.newInstance(2);
         playerControl = new PlayerControl(player);
-        urlString = "http://168.131.150.80:4567/live/5c9439b0b323782eecf7c38b/cam.m3u8";
+        urlString = "your_hls_url";
         am = (AudioManager) this.getApplicationContext().getSystemService(this.AUDIO_SERVICE);
         mainHandler = new Handler();
         userAgent = Util.getUserAgent(this, "MainActivity");
